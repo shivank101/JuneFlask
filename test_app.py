@@ -8,7 +8,7 @@ def client():
 
 def test_home(client):
     resp = client.get('/ping')
-    assert resp.status_code == 404
+    assert resp.status_code == 200
 
 def test_root(client):
     resp = client.get('/')
